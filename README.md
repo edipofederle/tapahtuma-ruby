@@ -1,6 +1,6 @@
 # Tapahtuma::Ruby
 
-TODO: Write a gem description
+Ruby gem for [tapahutma-server](https://github.com/edipofederle/tapahtuma)
 
 ## Installation
 
