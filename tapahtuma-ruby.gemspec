@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'tapahtuma/ruby/version'
+require 'tapahtuma/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tapahtuma-ruby"
-  spec.version       = Tapahtuma::Ruby::VERSION
+  spec.version       = Tapahtuma::VERSION
   spec.authors       = ["Édipo Luis Féderle"]
   spec.email         = ["edipofederle@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
@@ -20,5 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "webmock"
   spec.add_development_dependency "rake", "~> 10.0"
 end

@@ -1,13 +1,14 @@
 require 'spec_helper'
+require 'edn'
 
 describe Tapahtuma do
-  subject { Tapahtuma::Ruby }
+  subject { Tapahtuma::Client.new }
 
-  it "foo" do
+  it "should create a event" do
     event = {tags: ["warning", "error"],
       system: "deske",
       msg: "Error on create new user",
-      type:  "alert"}
+      type:  "alert"}.to_edn
 
     subject.create_event(event)
   end

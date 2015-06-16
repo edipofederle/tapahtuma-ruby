@@ -1,10 +1,10 @@
-require "tapahtuma/ruby/version"
+require 'httparty'
 
 module Tapahtuma
-  module Ruby
+  class Client
     # event in EDN format
-    def self.create_event(event)
-      # TODO
+    def create_event(event)
+      HTTParty.post('http://localhost:8080/events',{body: event})
     end
   end
 end
